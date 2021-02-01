@@ -121,7 +121,7 @@ def get_FState(reportData):
     return F_State_New
 
 
-def main(cookie,location): #location没啥用
+def main(cookie): #location没啥用
     timeUTC = datetime.datetime.utcnow()
     timeLocal = timeUTC + datetime.timedelta(hours=8)
     date = timeLocal.strftime('%Y - %m - %d')
