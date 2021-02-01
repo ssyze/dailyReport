@@ -46,10 +46,10 @@ jobs:
       - name: 'execute report'
         run: python report.py ${{ secrets.STUDENTID }} ${{ secrets.PASSWORD }}
         
-      - name: 'execute report'
+      - name: 'execute report1'
         run: python report.py ${{ secrets.STUDENTID1 }} ${{ secrets.PASSWORD1 }}
         
-      - name: 'execute report'
+      - name: 'execute report2'
         run: python report.py ${{ secrets.STUDENTID2 }} ${{ secrets.PASSWORD2 }}
         
       # 获取格式化的日期并存入GitHub内置的环境变量中
