@@ -52,6 +52,9 @@ jobs:
       - name: 'execute report2'
         run: python report.py ${{ secrets.STUDENTID2 }} ${{ secrets.PASSWORD2 }}
         
+      - name: 'execute report3'
+        run: python report.py ${{ secrets.STUDENTID3 }} ${{ secrets.PASSWORD3 }}
+        
       # 获取格式化的日期并存入GitHub内置的环境变量中
       - name: 'Get Date'
         run: echo "REPORT_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
