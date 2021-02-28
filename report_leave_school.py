@@ -81,7 +81,7 @@ def daily_report(cookie,reportData,delayReport = False):  #最后个参数是补
         "p1$SuiSM": "绿色",
         "p1$LvMa14Days": "是",
         "p1$Address2": "",
-        "p1$ShiFZJ": "是",
+        "p1$ShiFZJ": "否",
         "F_TARGET": "p1_ctl00_btnSubmit",
         "p1_ContentPanel1_Collapsed": "true",
         "p1_GeLSM_Collapsed": "false",
@@ -93,7 +93,7 @@ def daily_report(cookie,reportData,delayReport = False):  #最后个参数是补
     }
     if (reportData["sheng"]=="上海"):
         data["p1$ShiFSH"]="是"
-        data["p1$ShiFZX"]="否"
+        data["p1$ShiFZX"]="是"
     response = requests.post(reportUrl, data=data, cookies=cookie,headers=header)
    #  print(response.text)
     return response.text.find("提交成功")
