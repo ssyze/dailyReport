@@ -47,13 +47,13 @@ jobs:
         run: python report.py ${{ secrets.STUDENTID }} ${{ secrets.PASSWORD }} ${{ secrets.LOCATION }}
         
       - name: 'execute report1'
-        run: python report.py ${{ secrets.STUDENTID1 }} ${{ secrets.PASSWORD1 }}
+        run: python report.py ${{ secrets.STUDENTID1 }} ${{ secrets.PASSWORD1 }} ${{ secrets.LOCATION1 }}
         
       - name: 'execute report2'
-        run: python report.py ${{ secrets.STUDENTID2 }} ${{ secrets.PASSWORD2 }}
+        run: python report.py ${{ secrets.STUDENTID2 }} ${{ secrets.PASSWORD2 }} ${{ secrets.LOCATION }}
         
       - name: 'execute report3'
-        run: python report.py ${{ secrets.STUDENTID3 }} ${{ secrets.PASSWORD3 }}
+        run: python report.py ${{ secrets.STUDENTID3 }} ${{ secrets.PASSWORD3 }} ${{ secrets.LOCATION }}
         
       # 获取格式化的日期并存入GitHub内置的环境变量中
       - name: 'Get Date'
