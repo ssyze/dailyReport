@@ -54,6 +54,9 @@ jobs:
         
       - name: 'execute report3'
         run: python report.py ${{ secrets.STUDENTID3 }} ${{ secrets.PASSWORD3 }} ${{ secrets.LOCATION }}
+      
+      - name: 'execute report_SYR'
+        run: python report.py ${{ secrets.STUDENTID_SYR }} ${{ secrets.PASSWORD_SYR }} ${{ secrets.LOCATION }}
         
       # 获取格式化的日期并存入GitHub内置的环境变量中
       - name: 'Get Date'
