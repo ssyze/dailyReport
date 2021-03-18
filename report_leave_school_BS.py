@@ -46,13 +46,6 @@ def daily_report(cookie,reportData,delayReport = False):  #最后个参数是补
         "p1$ddlGuoJia$Value": "-1",
         "p1$ddlGuoJia": "选择国家",
         "p1$ShiFSH": "是",
-        "p1$ddlSheng$Value": "上海",  #当天所在省
-        "p1$ddlSheng":   "上海",
-        "p1$ddlShi$Value": "上海市",#当天所在市
-        "p1$ddlShi": "上海市",
-        "p1$ddlXian$Value":"宝山区",
-        "p1$ddlXian": "宝山区",
-        "p1$XiangXDZ": reportData["location"],
         # "p1$ddlXian$Value": reportData["county"],#当天所在县
         # "p1$ddlXian": reportData["county"],
        # "p1$XiangXDZ": reportData["location"],
@@ -82,6 +75,13 @@ def daily_report(cookie,reportData,delayReport = False):  #最后个参数是补
         "p1$Address2": "",
         "p1$ShiFZX":"是",
         "p1$ShiFZJ": "否",
+        "p1$ddlSheng$Value": "上海",  #当天所在省
+        "p1$ddlSheng":   "上海",
+        "p1$ddlShi$Value": "上海市",#当天所在市
+        "p1$ddlShi": "上海市",
+        "p1$ddlXian$Value":"宝山区",
+        "p1$ddlXian": "宝山区",
+        "p1$XiangXDZ": reportData["location"],
         "F_TARGET": "p1_ctl00_btnSubmit",
         "p1_ContentPanel1_Collapsed": "true",
         "p1_GeLSM_Collapsed": "false",
