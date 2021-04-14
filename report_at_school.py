@@ -21,7 +21,7 @@ def daily_report(cookie,reportData,delayReport = False):  #最后个参数是补
     soup = BeautifulSoup(response.text, 'html.parser')
     view_state = soup.find('input', attrs={'name': '__VIEWSTATE'})
     data = {
-        "__EVENTTARGET": "p1$ctl00$btnSubmit",
+        "__EVENTTARGET": "p1$ctl01$btnSubmit",
         "__EVENTARGUMENT": "",
         "__VIEWSTATE": view_state['value'],
         "__VIEWSTATEGENERATOR": "DC4D08A3",
