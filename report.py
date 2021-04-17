@@ -1,9 +1,12 @@
 # -*- coding:UTF-8 -*-
 import sys
 import requests
+import re
 import report_leave_school
 import report_at_school
 import report_leave_school_BS
+import rsa
+import base64
 
 def get_cookies(studentInfo):
     header = {
