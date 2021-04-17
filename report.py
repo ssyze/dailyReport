@@ -13,6 +13,7 @@ def get_cookies(studentInfo):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36",
         }
     loginUrl = "https://newsso.shu.edu.cn/login/eyJ0aW1lc3RhbXAiOjE2MDY2NTA3MzEzODc1NDIzODYsInJlc3BvbnNlVHlwZSI6ImNvZGUiLCJjbGllbnRJZCI6IldVSFdmcm50bldZSFpmelE1UXZYVUNWeSIsInNjb3BlIjoiMSIsInJlZGlyZWN0VXJpIjoiaHR0cHM6Ly9zZWxmcmVwb3J0LnNodS5lZHUuY24vTG9naW5TU08uYXNweD9SZXR1cm5Vcmw9JTJmIiwic3RhdGUiOiIifQ=="
+    response = requests.get("https://newsso.shu.edu.cn/static/js/main.js?v=1.0", headers=header)
     pubkey_str = re.findall("setPublicKey\(\"(.*?)\"\)", response.text)[0]
     pubkey_str = pubkey_str.replace(r'\n', '\n')                #'\\n'换'\n'
     '''
